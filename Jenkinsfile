@@ -26,18 +26,20 @@ pipeline{
             }
         }
 
+        /*
         stage('apply'){
             steps{
                 sh 'terraform apply --auto-approve -no-color'
             }
         }
+        */
 
-        /*
+        
         stage('destroy'){
             steps{
                 sh 'terraform destroy --auto-approve -no-color'
             }
         }
-        */
+        
     }
 }
