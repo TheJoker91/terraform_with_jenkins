@@ -1,7 +1,10 @@
 pipeline{
     agent any
 
+    
     stages{
+       
+       /*
         stage('init'){
             steps{
                 sh 'terraform init -no-color'
@@ -26,7 +29,7 @@ pipeline{
             }
         }
 
-        /*
+        
         stage('apply'){
             steps{
                 sh 'terraform apply --auto-approve -no-color'
